@@ -19,14 +19,14 @@ const Header = () => {
       }
       <a className='logo-text__container' href='/'>
         <div className='logo__container'>
-          <img src='./svg/v.svg' className='logo' alt='logo' />
+          <img src='/svg/v.svg' className='logo' alt='logo' />
         </div>
         <p>The Vegan Munch</p>
       </a>
       {windowSize > 700 && <div className='nav-menu-links'>
         <MenuListItem itemText='Home' itemLink='/' />
-        <MenuListItem itemText='link2' itemLink='/2' />
-        <MenuListItem itemText='link3' itemLink='/3' />
+        <MenuListItem itemText='All Categories' itemLink='/categories/all' />
+        <MenuListItem itemText='Search' itemLink='/recipes/search' />
         <MenuListItem itemText='About' itemLink='/about' />
       </div>}
     </div>

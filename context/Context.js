@@ -6,18 +6,8 @@ export const Context = React.createContext()
 const ContextProvider = (props) => {
    
     const [windowSize, setWindowSize] = useState(undefined);
-    const [location, setLocation] = useState('')
     const [isMenuOpen, setIsMenuOpen] = useState(false)
- 
-    useEffect(() => {
-        setLocation(window.location.pathname)
-      }, [location, setLocation])
-
-      useEffect(() => {
-        if(windowSize > 800){
-            setIsMenuOpen(false)
-        }
-      }, [windowSize])
+    const serverUrl = 'http://www.google.com'
 
     const useWindowSize = () => {
         useEffect(() => {
@@ -34,8 +24,7 @@ const ContextProvider = (props) => {
 
     return (
         <Context.Provider value={{
-            windowSize,
-            location,
+            windowSize, serverUrl,
             isMenuOpen, setIsMenuOpen
         }}>
             {props.children}

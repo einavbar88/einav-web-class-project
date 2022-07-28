@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "needle": "^3.1.0",
     "next": "12.1.6",
     "radium": "^0.26.2",
     "react": "18.1.0",
     "react-animations": "^1.0.0",
     "react-dom": "18.1.0",
+    "react-simple-star-rating": "^4.0.5",
     "react-transition-group": "^4.4.2"
   },
   "devDependencies": {

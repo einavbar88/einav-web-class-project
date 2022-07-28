@@ -5,7 +5,7 @@ export default function HeadImage() {
     return (
         <PageSection>
             <div className='head-image__container'>
-                <img src='./images/main-image.jpg'/>
+                <img src='/images/main-image.jpg'/>
             </div>
         </PageSection>
     )

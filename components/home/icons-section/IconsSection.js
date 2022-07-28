@@ -28,24 +28,24 @@ export default function IconsSection() {
 
 
     return (
-        <>
+        <div>
             <h1 className='icons-section__title beatiful-font'>What's for <span>{course}</span> {hourOfTheDay < 5 || hourOfTheDay > 18 ? 'tonight' : 'today'}?</h1>
             <PageSection>
-                <div style={{ width: '100%' }} ref={componentRef}>
+                <div style={{ width: '100%', minHeight: '20vh' }} ref={componentRef}>
                     <CSSTransition in={visible} timeout={2000} classNames={'floating-icons'} children>
                         <ul className={`icons-section`} >
                             {visible && <>
-                                <Icon key='Junk Food' src='/svg/hamburger.svg' text='Junk Food' href={''} />
-                                <Icon key='Asian' src='/svg/sushi.svg' text='Asian' href={''} />
-                                <Icon key='Comfort Food' src='/svg/hotpot.svg' text='Comfort Food' href={''} />
-                                <Icon key='Healthy Food' src='/svg/salad.svg' text='Healthy Food' href={''} />
-                                <Icon key='Sweets' src='/svg/cake.svg' text='Sweets' href={''} />
+                                <Icon src='/svg/hamburger.svg' text='Junk Food' href={''} />
+                                <Icon src='/svg/quick.svg' text="Quick N' Easy" href={''} />
+                                <Icon src='/svg/hotpot.svg' text='Comfort Food' href={''} />
+                                <Icon src='/svg/salad.svg' text='Healthy Food' href={''} />
+                                <Icon src='/svg/cake.svg' text='Sweets' href={''} />
                             </>
                             }
                         </ul>
                     </CSSTransition>
                 </div>
             </PageSection>
-        </>
+        </div>
     )
 }

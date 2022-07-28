@@ -1,3 +1,5 @@
+/* head-image */
+
 .head-image__container {
     width: 100%;
     height: 85vh;
@@ -12,6 +14,8 @@
     height: 100%;
 }
 
+/* icons-section */
+
 .icons-section {
     display: flex;
     justify-content: space-evenly;
@@ -19,11 +23,11 @@
     width: 100%;
 }
 
-li {
+.icons-section li {
     list-style: none;
 }
 
-.floating-icon{
+.floating-icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +36,7 @@ li {
 }
 
 .floating-icons-enter {
-    transform: translateX(-40rem);
+    transform: translateX(-200rem);
 }
 
 .floating-icons-enter-active {
@@ -49,18 +53,21 @@ li {
     transition: opacity 1s;
 }
 
-.icons-section__title{
+.icons-section__title {
     margin: 3rem 0;
     width: 100%;
     text-align: center;
     font-size: 4rem;
 }
 
-.icons-section__title span{
-    color: green;
+.icons-section__title span {
+    color: #006a4e;
 }
 
-.beatiful-font{
-    font-family: Smooch, Ubuntu, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+/* random recipe */
+
+.random-recipe__container {
+   
 }
+
